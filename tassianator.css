@@ -14,8 +14,24 @@
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-moz-keyframes antispin { 100% { -moz-transform: rotate(-360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@-webkit-keyframes antispin { 100% { -webkit-transform: rotate(-360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes antispin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+@keyframes color_change {
+    from {background-color: red;}
+    to {background-color: purple;}
+}
+
+.psychor{
+    -webkit-animation: color_change 0.1s infinite alternate;
+    -moz-animation: color_change 0.1s infinite alternate;
+    -ms-animation: color_change 0.1s infinite alternate;
+    -o-animation: color_change 0.1s infinite alternate;
+    animation: color_change 0.1s infinite alternate;
+}
 
 textarea[type="awesome"] {
     font-family: FontAwesome;
