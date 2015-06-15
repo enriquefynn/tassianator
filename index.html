@@ -11,19 +11,20 @@
     <body ng-controller="tassianatorCtrl" ng-class="(waiting) ? 'psychor': ''">
         <audio id="horror" src="./media/horror.mp3"></audio>
         <nav class="navbar fa fa-5x">Tassianator</nav>
-        <div class="container">
+        <div class="row">
             <form>
-                <div class="col-md-3">
+                <div class="col-md-9 col-sm-6">
+                    <textarea name="awesome" ng-model="normal.msg" type="awesome" class="form-control expanding" placeholder="As pessoas..."></textarea>
+                </div>
+                <div class="col-md-3 col-sm-6">
                     <div ng-click="tassianate(normal)"> 
                         <a href="">
-                        <div class="circular" ng-class="(waiting) ? 'rotate' : ''">
+                        <div class="circular center-block" ng-class="(waiting) ? 'rotate' : ''">
                         </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <textarea name="awesome" ng-model="normal.msg" type="awesome" class="form-control expanding" placeholder="As pessoas..."></textarea>
-                </div>
+
             </form>
         </div>
         <script src="http://code.jquery.com/jquery.js"></script>
