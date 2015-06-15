@@ -1,0 +1,13 @@
+.circular {
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(./img/tass.png) no-repeat;
+}
+
+textarea[type="submit"] {
+    font-family: FontAwesome;
+    font-size: 50px;
+}
