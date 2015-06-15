@@ -11,15 +11,15 @@ App.controller('tassianatorCtrl', ['$scope', '$timeout', function($scope, $timeo
 			{
 				//do smth with sentence
 				arr = sentence.split(" ");
-
+				break;
 			}
 			sentence += c;
 		}
-        normal.msg = sentence;
+        normal.msg = sentence;*/
         $scope.waiting = true;
         $timeout(function(){
             $scope.waiting = false;
-            normal.msg = "eita";
+			normal.msg = sentence;
         }, Math.random()*2000+1000);
     }
 }]);
